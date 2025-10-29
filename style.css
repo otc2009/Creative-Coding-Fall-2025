@@ -1,0 +1,60 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  height: 100%;
+}
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: block;
+  z-index: -1;
+}
+.content{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  height: 100vh;
+  padding: 10vh 0 0 4vw;
+  z-index: 1;
+  color: white;
+  text-align: center;
+  font-family:'Comfortaa', cursive;
+  font-size: 30px;
+}
+a{
+  text-decoration: none;
+  color:white;
+  transition: transform 0.3s ease;
+  font-size: 45px;
+  margin-bottom: 30px;
+}
+a:hover {
+  transform:translateX(50px);
+  color:antiquewhite;
+}
+
+#customCursor {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 25px;
+  height: 25px;
+  border: 1px solid black;
+  border-radius: 50%;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+}
+
+a:hover ~ #customCursor {
+  transform: translate(-50%, -50%) scale(1.4);
+  border-color: rgb(80,80,80);
+}
+
+html, body, a, button {
+  cursor: none !important;
+}
+

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.11.10/lib/p5.js"></script>
+    <title>Owen Correll Portfolio</title>
+  </head>
+  
+  <body>
+    <div class="content">
+    <h1> Owen Correll </h1>
+        <a href = "sketch1/sketch1.html">Aim Trainer</a>
+        <a href = "sketch2/sketch2.html">City Generator</a>
+        <a href = "sketch3/sketch3.html">Party Time</a>
+        <a href = "aboutme/owen.html">About Me </a>
+    </div>
+    <script src = "sketch.js"></script>
+    <script>
+      const cursor = document.createElement('div');
+      cursor.id = 'customCursor';
+      document.body.appendChild(cursor);
+      document.addEventListener('mousemove', (e) => {
+        cursor.style.left = e.clientX + 'px';
+        cursor.style.top = e.clientY + 'px';
+      });
+    </script>
+  </body>
+</html>

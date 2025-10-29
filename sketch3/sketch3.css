@@ -1,0 +1,30 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    background: black;
+}
+canvas{
+    display: block;
+}
+.back {
+    position: fixed;
+    left: 26px;
+    bottom: 26px;
+    z-index: 2;
+    padding: 15px 19px;
+    border-radius: 10px;
+    background: rgba(0,0,0,0.45);
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Comfortaa', sans-serif;
+    backdrop-filter: blur(6px);
+    transition: transform 0.3s ease;
+  }
+  
+  .back:hover {
+    background: rgba(0,0,0,0.65);
+    transform: scale(1.2);
+  }
